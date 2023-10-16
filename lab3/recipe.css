@@ -1,0 +1,21 @@
+body{
+  font-size:22px;
+  font-family: "Aerial";
+
+background-image: linear-gradient(to bottom,
+blue 0%,blue 50%,red 60%, red 80%);
+a {color: yellow;}
+}
+.Recipe{
+  text-transform: uppercase;
+}
+h1{ color: red;
+ }
+
+  a {color: green;
+    
+  
+
+ 
+
+
