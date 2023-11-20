@@ -1,3 +1,4 @@
+/* CSS for the recipe */
 body {
   background-color: #f2f2f2;
   font-family: Arial, sans-serif;
@@ -51,15 +52,23 @@ a:hover {
   color: #FFD700;
 }
 
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-  .main-content {
-    display: block;
-  }
+.nutrition-label {
+  background-color: #ffffff; /* Change as needed */
+  border: 1px solid #000000; /* Change border properties */
+  padding: 15px;
+  margin-top: 20px; /* Adjust as needed */
+}
 
-  .ingredients,
-  .instructions {
-    flex: none;
-    width: 100%;
-  }
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition-table td {
+  border: 1px solid #000000; /* Change border properties */
+  padding: 8px;
+}
+
+.footnote {
+  margin-top: 10px; /* Adjust as needed */
 }
