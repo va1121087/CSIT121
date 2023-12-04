@@ -1,32 +1,21 @@
 /* Reset some default styles */
-body, h1, h2, h3, p {
+body, h1, h2, h3, p, ul, li, table, th, td, input, button {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-* {
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, nav, main, aside, footer {
     text-align: center;
-}
-
-
-/* Apply styles to header, navigation, main content, and footer */
-header {
-    background-image: url('header-image.jpg'); /* Add your header image */
-    background-size: cover;
-    text-align: center;
-    padding: 100px 0;
-    color: #000; /* Changed to black for visibility */
-}
-
-header h1 {
-    font-size: 36px;
-    color: #000; /* Ensure h1 is also black */
 }
 
 nav ul {
     list-style-type: none;
     background-color: #333;
-    text-align: center;
     padding: 10px;
 }
 
@@ -37,95 +26,36 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: white;
 }
 
-main {
-    padding: 20px;
-}
-
-/* Decorative Styles */
 .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
     background-color: #FF5733;
-    color: #fff;
+    color: white;
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
-    transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
-    background-color: #FF704D;
+.table, th, td {
+    border: 1px solid black;
+    padding: 5px;
 }
 
-/* Menu Styles */
-.menu-header {
-    background-image: url('menu-header-image.jpg'); /* Add menu header image */
-    background-size: cover;
-    text-align: center;
-    padding: 100px 0;
-    color: #000; /* Changed to black for visibility */
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
 }
 
-.menu-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.menu-items section {
-    flex-basis: calc(33.33% - 20px);
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #F8F8F8;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.menu-items h2 {
-    color: #FF5733;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.menu-items .price {
-    color: #333;
-    font-weight: bold;
-}
-
-/* About Styles */
-.about-header {
-    background-image: url('about-header-image.jpg'); /* Add about header image */
-    background-size: cover;
-    text-align: center;
-    padding: 100px 0;
-    color: #000; /* Changed to black for visibility */
-}
-
-.about-content {
-    padding: 20px;
-}
-
-/* Contact Styles */
-.contact-header {
-    background-image: url('contact-header-image.jpg'); /* Add contact header image */
-    background-size: cover;
-    text-align: center;
-    padding: 100px 0;
-    color: #000; /* Changed to black for visibility */
-}
-
-.contact-form {
-    padding: 20px;
-}
-
-/* Footer Styles */
 footer {
     background-color: #333;
-    color: #fff;
-    text-align: center;
+    color: white;
     padding: 10px;
 }
